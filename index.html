@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alvin Helm - Premium Motorcycle Helmets</title>
+    <link rel="shortcut icon" href="img/faticon/output-onlinepngtools.png" type="image/png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        .hero-video {
+            height: 100vh;
+            object-fit: cover;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+        }
+        
+        .brand-logo {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+            max-height: 80px;
+        }
+        .brand-logo:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/faticon/output-onlinepngtools.png" alt="Alvin Helm Logo" width="40" class="me-2">
+                Alvin Helm
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="vh-100 position-relative overflow-hidden">
+        <video autoplay muted loop class="hero-video">
+            <source src="img/video home.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-white">
+                    <h1 class="display-1 fw-bold mb-4">
+                        Your Journey Begins With<br>
+                        <span class="auto-typed text-warning"></span> Helmet
+                    </h1>
+                    <a href="#featured-products" class="btn btn-lg btn-warning">Explore Collection</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Products -->
+    <section id="featured-products" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">New Arrivals</h2>
+                <p class="lead text-muted">Discover our latest helmet collection</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Product Cards -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-hover shadow-sm">
+                        <img src="img/produk/ink.png" class="card-img-top" alt="Trooper Thunder Helmet" loading="lazy">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Trooper Thunder</h5>
+                            <p class="text-muted">Premium Full-face Helmet</p>
+                            <div class="d-grid">
+                                <a href="product.html" class="btn btn-outline-dark">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Repeat similar card structure for other products -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Showcase -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h3 class="fw-bold mb-3">Trusted Brands</h3>
+            </div>
+            <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="img/brand/kyt.png" class="img-fluid brand-logo" alt="KYT Helmets" loading="lazy">
+                </div>
+                <!-- Repeat for other brands -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h4 class="mb-4">Stay Updated with New Arrivals</h4>
+            <form class="row g-3 justify-content-center">
+                <div class="col-md-4">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> 123 Helm Street, Bandung</li>
+                        <li><i class="bi bi-phone"></i> +62 812 3456 7890</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <h5>Opening Hours</h5>
+                    <p>Mon-Sat: 9AM - 8PM<br>Sun: Closed</p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2023 Alvin Helm. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <script>
+        // Typed.js Initialization
+        document.addEventListener('DOMContentLoaded', () => {
+            new Typed('.auto-typed', {
+                strings: ['Premium', 'Safe', 'Stylish', 'Durable'],
+                typeSpeed: 100,
+                backSpeed: 50,
+                loop: true
+            });
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
